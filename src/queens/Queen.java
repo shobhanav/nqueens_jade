@@ -56,7 +56,10 @@ public class Queen extends Agent{
 		}	
 		
 		column_id = Integer.parseInt((String) args[0]);
-		max_col = Integer.parseInt((String) args[1]);		
+		max_col = Integer.parseInt((String) args[1]);
+		
+		Random random = new Random();
+        counter= random.nextInt(7);
 		
 		// Register the queen in the yellow pages
 		DFAgentDescription dfd = new DFAgentDescription();
